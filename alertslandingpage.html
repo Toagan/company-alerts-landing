@@ -51,59 +51,89 @@
     </div>
 
     <!-- How It Works -->
-    <div class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-16">How It Works</h2>
-            <div class="grid md:grid-cols-3 gap-12">
-                <div class="bg-gray-50 p-8 rounded-xl">
-                    <div class="text-blue-600 text-2xl font-bold mb-6">1️⃣</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Select Companies & Events</h3>
-                    <ul class="space-y-3 text-gray-600">
-                        <li class="flex items-center">
+<div class="py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-16">How It Works</h2>
+        
+        <div class="relative space-y-16">
+            <!-- Vertical Line - Modified to use pseudo-element for controlled height -->
+            <div class="absolute left-[21px] top-0 h-[calc(80%-80px)] w-0.5 bg-blue-100"></div>
+
+            <!-- Rest of the steps remain the same -->
+            <!-- Step 1 -->
+            <div class="relative flex gap-8">
+                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold shadow-lg z-10">
+                    1
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl flex-grow shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="text-blue-600 mr-2">Select Companies & Events</span>
+                        <i data-lucide="arrow-right" class="w-5 h-5 text-blue-600"></i>
+                    </h3>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-center bg-white p-3 rounded-lg">
                             <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
                             Track specific companies or sectors
                         </li>
-                        <li class="flex items-center">
+                        <li class="flex items-center bg-white p-3 rounded-lg">
                             <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
                             Choose from 20+ event types
                         </li>
-                        <li class="flex items-center">
+                        <li class="flex items-center bg-white p-3 rounded-lg">
                             <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
                             Set custom filters
                         </li>
                     </ul>
                 </div>
-                <div class="bg-gray-50 p-8 rounded-xl">
-                    <div class="text-blue-600 text-2xl font-bold mb-6">2️⃣</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Get Instant Alerts</h3>
-                    <ul class="space-y-3 text-gray-600">
-                        <li class="flex items-center">
+            </div>
+
+            <!-- Step 2 -->
+            <div class="relative flex gap-8">
+                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold shadow-lg z-10">
+                    2
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl flex-grow shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="text-blue-600 mr-2">Get Instant Alerts</span>
+                        <i data-lucide="arrow-right" class="w-5 h-5 text-blue-600"></i>
+                    </h3>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-center bg-white p-3 rounded-lg">
                             <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
                             Real-time email notifications
                         </li>
-                        <li class="flex items-center">
+                        <li class="flex items-center bg-white p-3 rounded-lg">
                             <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
                             Direct links to source filings
                         </li>
-                        <li class="flex items-center">
+                        <li class="flex items-center bg-white p-3 rounded-lg">
                             <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
                             Full context included
                         </li>
                     </ul>
                 </div>
-                <div class="bg-gray-50 p-8 rounded-xl">
-                    <div class="text-blue-600 text-2xl font-bold mb-6">3️⃣</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Stay Ahead of Markets</h3>
-                    <ul class="space-y-3 text-gray-600">
-                        <li class="flex items-center">
+            </div>
+
+            <!-- Step 3 -->
+            <div class="relative flex gap-8">
+                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold shadow-lg z-10">
+                    3
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl flex-grow shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="text-blue-600 mr-2">Stay Ahead of Markets</span>
+                        <i data-lucide="arrow-right" class="w-5 h-5 text-blue-600"></i>
+                    </h3>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-center bg-white p-3 rounded-lg">
                             <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
                             Be first to know about changes
                         </li>
-                        <li class="flex items-center">
+                        <li class="flex items-center bg-white p-3 rounded-lg">
                             <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
                             Never miss key events
                         </li>
-                        <li class="flex items-center">
+                        <li class="flex items-center bg-white p-3 rounded-lg">
                             <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
                             Make faster decisions
                         </li>
@@ -112,72 +142,108 @@
             </div>
         </div>
     </div>
+</div>
 
     <!-- What We Track -->
-    <div class="py-24 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-16">What We Track</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-sm">
-                    <div class="text-blue-600 text-2xl mb-6">🔵</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-6">Leadership Changes</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-center">
-                            <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
-                            <span class="text-gray-600">CEO/CFO appointments</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
-                            <span class="text-gray-600">Board changes</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
-                            <span class="text-gray-600">Management updates</span>
-                        </li>
-                    </ul>
+<div class="py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">What We Track</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Comprehensive monitoring of critical company events across European markets
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Leadership Changes Card -->
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
+                <div class="flex items-center justify-between mb-6">
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                            <i data-lucide="users" class="w-6 h-6 text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Leadership Changes</h3>
+                    </div>
+                    <span class="text-sm font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full">Core</span>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-sm">
-                    <div class="text-blue-600 text-2xl mb-6">🔵</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-6">Corporate Events</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-center">
-                            <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
-                            <span class="text-gray-600">Strategic reviews</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
-                            <span class="text-gray-600">Restructurings</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
-                            <span class="text-gray-600">M&A activity</span>
-                        </li>
-                    </ul>
+                
+                <ul class="space-y-4">
+                    <li class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-blue-600 mr-3"></i>
+                        <span class="text-gray-700">CEO/CFO appointments</span>
+                    </li>
+                    <li class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-blue-600 mr-3"></i>
+                        <span class="text-gray-700">Board changes</span>
+                    </li>
+                    <li class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-blue-600 mr-3"></i>
+                        <span class="text-gray-700">Management updates</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Corporate Events Card -->
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
+                <div class="flex items-center justify-between mb-6">
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                            <i data-lucide="building" class="w-6 h-6 text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Corporate Events</h3>
+                    </div>
+                    <span class="text-sm font-medium text-purple-600 bg-purple-50 px-3 py-1 rounded-full">Strategic</span>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-sm">
-                    <div class="text-blue-600 text-2xl mb-6">🔵</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-6">Financial Updates</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-center">
-                            <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
-                            <span class="text-gray-600">Trading updates</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
-                            <span class="text-gray-600">Profit warnings</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
-                            <span class="text-gray-600">Guidance changes</span>
-                        </li>
-                    </ul>
+
+                <ul class="space-y-4">
+                    <li class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-blue-600 mr-3"></i>
+                        <span class="text-gray-700">Strategic reviews</span>
+                    </li>
+                    <li class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-blue-600 mr-3"></i>
+                        <span class="text-gray-700">Restructurings</span>
+                    </li>
+                    <li class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-blue-600 mr-3"></i>
+                        <span class="text-gray-700">M&A activity</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Financial Updates Card -->
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
+                <div class="flex items-center justify-between mb-6">
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                            <i data-lucide="chart-bar" class="w-6 h-6 text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Financial Updates</h3>
+                    </div>
+                    <span class="text-sm font-medium text-green-600 bg-green-50 px-3 py-1 rounded-full">Essential</span>
                 </div>
+
+                <ul class="space-y-4">
+                    <li class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-blue-600 mr-3"></i>
+                        <span class="text-gray-700">Trading updates</span>
+                    </li>
+                    <li class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-blue-600 mr-3"></i>
+                        <span class="text-gray-700">Profit warnings</span>
+                    </li>
+                    <li class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-blue-600 mr-3"></i>
+                        <span class="text-gray-700">Guidance changes</span>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
+</div>
 
      <!-- Technical Details -->
-     <div class="py-24 bg-gray-50">
+     <div class="py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 class="text-3xl font-bold text-center text-gray-900 mb-16">Built for Scale</h2>
           
@@ -246,15 +312,15 @@
                               <div class="font-semibold text-gray-900">Email Alerts</div>
                               <span class="px-3 py-1 text-xs font-medium text-blue-600 bg-blue-100 rounded-full">Most Popular</span>
                           </div>
-                          <p class="text-sm text-gray-600">Instant notifications for your tracked companies and events</p>
+                          <p class="text-sm text-gray-600">Instant notifications for your tracked companies and events via email</p>
                       </div>
 
                       <div class="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-300 cursor-pointer">
                           <div class="flex items-center justify-between mb-2">
-                              <div class="font-semibold text-gray-900">Web Dashboard</div>
+                              <div class="font-semibold text-gray-900">SMS Notifications</div>
                               <span class="px-3 py-1 text-xs font-medium text-green-600 bg-green-100 rounded-full">Easy Setup</span>
                           </div>
-                          <p class="text-sm text-gray-600">Access all data through our intuitive web interface</p>
+                          <p class="text-sm text-gray-600">Access crucial notifcations on the go</p>
                       </div>
 
                       <div class="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-300 cursor-pointer">
@@ -263,14 +329,6 @@
                               <span class="px-3 py-1 text-xs font-medium text-purple-600 bg-purple-100 rounded-full">Team Favorite</span>
                           </div>
                           <p class="text-sm text-gray-600">Get alerts directly in your Slack channels</p>
-                      </div>
-
-                      <div class="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-300 cursor-pointer">
-                          <div class="flex items-center justify-between mb-2">
-                              <div class="font-semibold text-gray-900">Excel Add-in</div>
-                              <span class="px-3 py-1 text-xs font-medium text-orange-600 bg-orange-100 rounded-full">Coming Soon</span>
-                          </div>
-                          <p class="text-sm text-gray-600">Pull data directly into your spreadsheets</p>
                       </div>
                   </div>
               </div>
