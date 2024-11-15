@@ -31,17 +31,20 @@
                     NEW: Company Event Alerts
                 </span>
                 <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl mb-8">
-                    Never Miss Critical European Company Changes
+                    Never Miss
+                    <span class="text-blue-600">Critical</span>
+                    European<br class="hidden sm:block"/> Company 
+                    <span class="text-blue-600">Changes</span>
                 </h1>
                 <p class="text-xl text-gray-500 max-w-3xl mx-auto mb-10">
-                    Track CEO changes, restructurings, and key corporate events in real-time across 6,500+ European companies.
+                    Track CEO changes, restructurings, and key corporate events in real-time across 
+                    <span class="text-blue-600 font-semibold">6,500+</span> 
+                    European companies.
                 </p>
                 <!-- New CTA Button -->
-                <a href="#pricing" class="inline-flex items-center justify-center gap-2 bg-blue-600 text-white font-bold py-4 px-8 rounded-lg shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center w-auto">
-                    <div class="flex items-center justify-center gap-2"> <!-- Added container div -->
-                        <span class="text-center">Setup Your Alerts</span>
-                        <i data-lucide="arrow-down" class="w-5 h-5 animate-bounce"></i>
-                    </div>
+                <a href="#pricing-section" class="mx-auto w-[50%] flex items-center justify-center space-x-2 bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <span>Setup Your Alerts</span>
+                    <i data-lucide="arrow-down" class="w-5 h-5 animate-bounce"></i>
                 </a>
             </div>
         </div>
@@ -275,31 +278,51 @@
       </div>
   </div>
 
-    <!-- CTA Section -->
-    <div class="py-24 bg-blue-600 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white/10 p-8 rounded-xl backdrop-blur-sm">
-                    <div class="text-2xl mb-4">▶️</div>
-                    <h3 class="text-xl font-bold mb-2">Start 14-Day Free Trial</h3>
-                    <p class="text-white/80 mb-6">For Retail investors</p>
-                    <p class="text-white/80 mb-6">No credit card required</p>
-                    <button class="bg-white text-blue-600 font-bold py-3 px-8 rounded-md hover:bg-gray-100 transition duration-300">
-                        Start Free Trial
-                    </button>
+<!-- CTA Section -->
+<div id="pricing-section" class="py-24 bg-blue-600 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12">Ready to Get Started?</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Free Trial Card -->
+            <div class="bg-white/10 p-8 rounded-xl backdrop-blur-sm hover:bg-white/20 transition-all duration-300 border border-white/10">
+                <div class="text-2xl mb-4">▶️</div>
+                <h3 class="text-2xl font-bold mb-4">Start 14-Day Free Trial</h3>
+                <div class="space-y-4 mb-8">
+                    <p class="text-white/80 flex items-center">
+                        <i data-lucide="check" class="w-5 h-5 mr-2 text-green-400"></i>
+                        For Retail investors
+                    </p>
+                    <p class="text-white/80 flex items-center">
+                        <i data-lucide="check" class="w-5 h-5 mr-2 text-green-400"></i>
+                        No credit card required
+                    </p>
                 </div>
-                <div class="bg-white/10 p-8 rounded-xl backdrop-blur-sm">
-                    <div class="text-2xl mb-4">📞</div>
-                    <h3 class="text-xl font-bold mb-2">Schedule Product Demo</h3>
-                    <p class="text-white/80 mb-6">For Institutional investors</p>
-                    <p class="text-white/80 mb-6">15-minute walkthrough</p>
-                    <button class="bg-white text-blue-600 font-bold py-3 px-8 rounded-md hover:bg-gray-100 transition duration-300">
-                        Schedule Demo
-                    </button>
+                <button class="w-full bg-white text-blue-600 font-bold py-4 px-8 rounded-lg hover:bg-gray-100 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Start Free Trial
+                </button>
+            </div>
+
+            <!-- Demo Card -->
+            <div class="bg-white/10 p-8 rounded-xl backdrop-blur-sm hover:bg-white/20 transition-all duration-300 border border-white/10">
+                <div class="text-2xl mb-4">📞</div>
+                <h3 class="text-2xl font-bold mb-4">Schedule Product Demo</h3>
+                <div class="space-y-4 mb-8">
+                    <p class="text-white/80 flex items-center">
+                        <i data-lucide="check" class="w-5 h-5 mr-2 text-green-400"></i>
+                        For Institutional investors
+                    </p>
+                    <p class="text-white/80 flex items-center">
+                        <i data-lucide="check" class="w-5 h-5 mr-2 text-green-400"></i>
+                        15-minute walkthrough
+                    </p>
                 </div>
+                <button class="w-full bg-white text-blue-600 font-bold py-4 px-8 rounded-lg hover:bg-gray-100 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Schedule Demo
+                </button>
             </div>
         </div>
     </div>
+</div>
 
     <script>
         lucide.createIcons();
