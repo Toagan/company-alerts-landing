@@ -20,6 +20,35 @@
             white-space: pre;
         }
     </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 2rem;
+        }
+        .scroll-highlight {
+            transition: transform 0.5s ease;
+        }
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 2rem;
+        }
+        .scroll-lock {
+            overflow: hidden;
+        }
+        .scroll-highlight {
+            transition: transform 0.5s ease;
+        }
+    </style>
 </head>
 <body class="min-h-screen bg-white">
     <!-- Hero Section -->
@@ -42,7 +71,9 @@
                     European companies.
                 </p>
                 <!-- New CTA Button -->
-                <a href="#pricing-section" class="mx-auto w-[50%] flex items-center justify-center space-x-2 bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <a href="#pricing-section" 
+                    class="mx-auto w-[50%] flex items-center justify-center space-x-2 bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                    onclick="smoothScrollTo(event, 'pricing-section')">
                     <span>Setup Your Alerts</span>
                     <i data-lucide="arrow-down" class="w-5 h-5 animate-bounce"></i>
                 </a>
@@ -431,6 +462,38 @@
 </div>
 
     <script>
+        lucide.createIcons();
+    </script>
+    <script>
+        // Force scroll position to top immediately when DOM loads
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+    
+        // Prevent browser's default scroll restoration
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+    
+        // Add scroll lock class initially
+        document.documentElement.classList.add('scroll-lock');
+    
+        // Remove scroll lock after everything is loaded
+        window.addEventListener('load', function() {
+            document.documentElement.classList.remove('scroll-lock');
+            window.scrollTo(0, 0);
+        });
+    
+        // Smooth scroll function
+        function smoothScrollTo(e, targetId) {
+            e.preventDefault();
+            const target = document.getElementById(targetId);
+            target.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    
+        // Initialize icons
         lucide.createIcons();
     </script>
 </body>
